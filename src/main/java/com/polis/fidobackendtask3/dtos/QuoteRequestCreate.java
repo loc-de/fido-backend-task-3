@@ -2,9 +2,13 @@ package com.polis.fidobackendtask3.dtos;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class QuoteRequestCreate {
 
     @NotBlank(message = "author cant be empty")
